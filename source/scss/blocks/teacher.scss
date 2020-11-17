@@ -1,0 +1,88 @@
+.teacher {
+  margin-left: 0;
+  background: url("../img/yoga-bckg-pattern-team-320.png");
+  background-repeat: no-repeat;
+  background-position: 0px 0px;
+  background-color: #FCF8FE;
+}
+
+.teacher__title {
+  margin-top: 0;
+  padding-top: 70px;
+  padding-bottom: 30px;
+  text-align: center;
+  color: #8E80A9;
+  @include geometria-bold(18px);
+}
+
+.teacher__info {
+  display: flex;
+  height: 82px;
+  width: 250px;
+  margin: 10px auto;
+  background-color: #ffffff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.teacher__wrapper {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.teacher__instructor {
+  margin-bottom: 0;
+  color: #E65C7B;
+  @include geometria-medium(10px);
+}
+
+.teacher__name {
+  margin: 0;
+  color: #E65C7B;
+  @include geometria-medium(10px);
+}
+
+.teacher__direction {
+  color: #8E80A9;
+  @include geometria-medium(10px);
+}
+
+.teacher__link {
+  margin-top: 13px;
+  margin-left: 20px;
+}
+
+.teacher__description-wrapper {
+  width: 250px;
+  margin: 0 auto;
+}
+
+.teacher__description-title {
+  color: #E65C7B;
+  font-size: 13px;
+  @include geometria-medium(10px);
+}
+
+.teacher__description {
+  color: #8E80A9;
+  font-size: 13px;
+  @include geometria-medium(10px);
+}
+
+@media (min-width: $md) {
+  .teacher {
+    background: url("../img/yoga-bckg-pattern-team-768.png");
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
+    background-color: #FCF8FE;
+  }
+}
+
+@media (min-width: $xl) {
+  .teacher {
+    background: url("../img/yoga-bckg-pattern-team-1280.png");
+    background-repeat: no-repeat;
+    background-position: 0px -40px;
+    background-color: #FCF8FE;
+  }
+}

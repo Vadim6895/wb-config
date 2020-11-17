@@ -1,11 +1,18 @@
-/* Это точка входа для всех стилей. Подключите сюда все файлы стилей, которые должны быть на странице.*/
 
 @import "font-face";
 @import "variables";
 @import "global";
 
 @import "blocks/visually-hidden";
-@import "blocks/container";
+@import "blocks/mixins";
+
+@import "blocks/abonements";
 @import "blocks/header";
-@import "blocks/nav";
-@import "blocks/logo";
+@import "blocks/yoga-directions";
+@import "blocks/teacher";
+@import "blocks/swipper";
+@import "blocks/reviews";
+
+@import "blocks/footer";
+
+@import 'swiper/swiper-bundle.css';

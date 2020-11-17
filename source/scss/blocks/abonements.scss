@@ -1,0 +1,127 @@
+.abonements {
+  background: url("../img/yoga-cloud-bckg-768.png");
+  background-repeat: no-repeat;
+  background-position: 0px 100px;
+  background-color: #FCF8FE;
+}
+
+.abonements__title {
+  text-align: center;
+  color: #8E80A9;
+  margin-top: 0;
+  padding-top: 20px;
+  @include geometria-bold(18px);
+}
+
+.abonements__period-abonement {
+  display: flex;
+  justify-content: space-around;
+  padding: 0 20px 0 20px;
+}
+
+.abonements__period-item {
+  color: #8E80A9;
+}
+
+.abonements__period-link {
+  text-decoration: none;
+  color: #E65C7B;
+  @include geometria-medium(12px);
+}
+
+.abonements__list {
+  padding: 0;
+  padding-bottom: 5px;
+  margin-bottom: 0px;
+}
+
+.abonements__item {
+  width: 250px;
+  margin: 0 auto 10px auto;
+  background-color: #ffffff;
+  box-shadow: 0 0 15px rgba(0,0,0,0.3);
+}
+
+.abonements__time {
+  padding-top: 20px;
+  text-align: center;
+  color: #8E80A9;
+  @include geometria-bold(16px);
+}
+
+.abonements__description {
+  display: block;
+  text-align: center;
+  color: #E65C7B;
+  @include geometria-medium(10px);
+  line-height: 15px;
+}
+
+.abonements__price {
+  text-align: center;
+  color: #8E80A9;
+  @include geometria-bold(18px);
+}
+
+.abonements__button {
+  border: none;
+  background-color: #8E80A9;
+  padding: 20px;
+  color: #ffffff;
+  margin: 10px auto 30px 55px;
+  cursor: pointer;
+  @include geometria-medium(10px);
+
+  &:focus {
+    outline: none;
+  }
+
+  &:hover {
+    background-color: #E65C7B;
+  }
+}
+
+@media (min-width: $md) {
+  .abonements {
+    background: url("../img/yoga-cloud-bckg-1456.png");
+    background-repeat: no-repeat;
+    background-color: #FCF8FE;
+    background-position: 0px -450px;
+    background-size: 1920px;
+  }
+
+  .abonements__title {
+    padding-top: 40px;
+    font-size: 21px;
+  }
+
+  .abonements__period-abonement {
+    max-width: 400px;
+    margin: 0 auto 50px auto;
+  }
+
+  .abonements__list {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .abonements__item {
+    width: 176px;
+    max-height: 158px;
+  }
+
+  .abonements__item--promo {
+    width: 221px;
+    max-height: 221px;
+  }
+
+  .abonements__button {
+    display: none;
+  }
+
+  .abonements__button--promo {
+    display: block;
+    margin: 10px auto 50px auto;
+  }
+}

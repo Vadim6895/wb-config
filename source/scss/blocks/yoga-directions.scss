@@ -1,0 +1,200 @@
+.yoga-directions {
+  background-color: #FCF8FE;
+  background: url("../img/yoga-bckg-pattern-320.png");
+  background-repeat: no-repeat;
+  background-position: 0 190px;
+  background-color: #FCF8FE;
+}
+
+.yoga-directions__title {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  color: #8E80A9;
+  @include geometria-medium(18px);
+}
+
+.yoga-directions__schedule {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+}
+
+.yoga-directions__container {
+  width: 255px;
+  padding: 0;
+  margin: 20px auto;
+  margin-bottom: 0;
+}
+
+.yoga-directions__item {
+  background-color: #ffffff;
+  margin-top: 20px;
+  width: 250px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.3);
+}
+
+.yoga-directions__direction {
+  padding-left: 15px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: #8E80A9;
+  @include geometria-bold(12px);
+}
+
+.yoga-directions__work-days {
+  padding-left: 15px;
+  margin: 0;
+  color: #8E80A9;
+  @include geometria-medium(10px);
+}
+
+.yoga-directions__teacher {
+  padding-left: 15px;
+  margin-bottom: 0;
+  color: #E65C7B;
+  @include geometria-medium();
+}
+
+.yoga-directions__teacher-name {
+  margin: 0;
+  padding-left: 15px;
+  color: #E65C7B;
+  @include geometria-medium();
+}
+
+.yoga-directions__link {
+  background-color: #8E80A9;
+  width: 50px;
+  margin-top: -6px;
+  padding-top: 0;
+
+  &::before {
+    content: ">";
+    font-family: Roboto;
+    font-size: 24px;
+    position: relative;
+    color: #ffffff;
+    left: 20px;
+    top: 60px;
+  }
+
+  &:hover {
+    background-color: #E65C7B;
+  }
+}
+
+.yoga-directions__button {
+  display: none;
+}
+
+@media (min-width: $md) {
+  .yoga-directions {
+    background: url("../img/yoga-bckg-pattern-768.png"), #FCF8FE;
+    background-repeat: no-repeat;
+    background-position: 25px 40px;
+  }
+
+  .yoga-directions__title {
+    @include geometria-bold(30px);
+  }
+
+  .yoga-directions__container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 500px;
+    width: 700px;
+  }
+
+  .yoga-directions__item {
+    display: flex;
+    width: auto;
+    max-width: 360px;
+  }
+
+  .yoga-directions__item:first-child {
+    display: block;
+    width: 250px;
+  }
+
+  .yoga-directions__button {
+    display: block;
+    border: 0;
+    background-color: #ffffff;
+    color: #8E80A9;
+    width: 350px;
+    height: 35px;
+    margin-top: 20px;
+    @include geometria-medium (10px);
+    box-shadow: 0 0 15px rgba(0,0,0,0.3);
+
+    &:focus {
+      outline: none;
+    }
+    &:hover {
+      background-color: #8E80A9;
+      color: #ffffff;
+    }
+  }
+}
+
+@media (min-width: $xl) {
+  .yoga-directions {
+    background: url("../img/yoga-bckg-pattern-1280.png"), #FCF8FE;
+    background-repeat: no-repeat;
+    background-position: 25px -100px;
+  }
+
+  .yoga-directions__container {
+    width: 950px;
+    margin-top: 45px;
+  }
+
+  .yoga-directions__item {
+    min-width: 525px;
+  }
+
+  .yoga-directions__item:first-child {
+    min-width: 366px;
+  }
+
+  .yoga-directions__direction {
+    font-size: 16px;
+    margin-top: 32px;
+    margin-left: 28px;
+  }
+
+  .yoga-directions__work-days {
+    font-size: 12px;
+    margin-left: 28px;
+  }
+
+  .yoga-directions__teacher {
+    margin-left: 28px;
+  }
+
+  .yoga-directions__teacher-name {
+    margin-left: 28px;
+    margin-bottom: 20px;
+  }
+
+  .yoga-directions__button {
+    width: 521px;
+    height: 48px;
+    font-size: 12px;
+  }
+
+  .yoga-directions__link {
+    margin-left: 50px;
+    margin-top: 0;
+
+    &:before {
+      top: 75px;
+    }
+  }
+
+  .yoga-directions__link:first-child {
+    margin-top: -6px;
+  }
+}

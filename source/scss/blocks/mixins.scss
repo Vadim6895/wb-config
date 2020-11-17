@@ -1,0 +1,11 @@
+@mixin geometria-medium ($value: 10px) {
+  font-family: Geometria;
+  font-size: $value;
+  font-weight: medium;
+}
+
+@mixin geometria-bold ($value: 10px) {
+  font-family: Geometria;
+  font-size: $value;
+  font-weight: bold;
+}
