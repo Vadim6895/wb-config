@@ -1,7 +1,6 @@
 .swiper-container {
-    width: auto;
+    max-width: 320px;
     height: auto;
-    margin-left: 0;
     padding-bottom: 20px;
 }
 
@@ -86,12 +85,12 @@
   }
 
   .swiper-button-prev-second {
-    top: 725px;
+    top: 735px;
     left: 305px;
   }
 
   .swiper-button-next-second {
-    top: 725px;
+    top: 735px;
     left: 360px;
   }
 }

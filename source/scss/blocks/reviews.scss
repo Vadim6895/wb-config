@@ -72,8 +72,22 @@
 
 @media (min-width: $md) {
   .reviews__item {
-    width: 442px;
+    width: 422px;
     padding: 50px;
-    background-position: 70px 10px;
+    background-position: 70px 30px;
+  }
+
+  .reviews__description {
+    font-size: 12px;
+  }
+
+  .reviews__title {
+    font-size: 21px;
+  }
+}
+
+@media (min-width: $xl) {
+  .reviews__title {
+    font-size: 30px;
   }
 }

@@ -34,6 +34,11 @@
   box-shadow: 0 0 15px rgba(0,0,0,0.3);
 }
 
+.yoga-directions__item--promo {
+  display: flex;
+  flex-direction: column;
+}
+
 .yoga-directions__direction {
   padding-left: 15px;
   margin-top: 10px;
@@ -66,8 +71,8 @@
 .yoga-directions__link {
   background-color: #8E80A9;
   width: 50px;
-  margin-top: -6px;
   padding-top: 0;
+  margin-top: -6px;
 
   &::before {
     content: ">";
@@ -76,7 +81,7 @@
     position: relative;
     color: #ffffff;
     left: 20px;
-    top: 60px;
+    top: 40%;
   }
 
   &:hover {
@@ -86,6 +91,7 @@
 
 .yoga-directions__button {
   display: none;
+  cursor: pointer;
 }
 
 @media (min-width: $md) {
@@ -96,15 +102,17 @@
   }
 
   .yoga-directions__title {
-    @include geometria-bold(30px);
+    @include geometria-bold(21px);
   }
 
   .yoga-directions__container {
     display: flex;
-    flex-direction: column;
     flex-wrap: wrap;
-    height: 500px;
+    flex-direction: column;
     width: 700px;
+    align-items: baseline;
+    height: 400px;
+    align-content: space-around;
   }
 
   .yoga-directions__item {
@@ -113,9 +121,8 @@
     max-width: 360px;
   }
 
-  .yoga-directions__item:first-child {
-    display: block;
-    width: 250px;
+  .yoga-directions__link {
+    margin-top: 0;
   }
 
   .yoga-directions__button {
@@ -147,16 +154,29 @@
   }
 
   .yoga-directions__container {
-    width: 950px;
+    width: 1000px;
+    height: 600px;
     margin-top: 45px;
+  }
+
+  .yoga-directions__title {
+    font-size: 30px;
   }
 
   .yoga-directions__item {
     min-width: 525px;
   }
 
-  .yoga-directions__item:first-child {
+  .yoga-directions__item--promo {
     min-width: 366px;
+  }
+
+  .yoga-directions__schedule {
+    max-width: 405px;
+  }
+
+  .yoga-directions__wrapper {
+    width: 255px;
   }
 
   .yoga-directions__direction {
@@ -183,18 +203,6 @@
     width: 521px;
     height: 48px;
     font-size: 12px;
-  }
-
-  .yoga-directions__link {
-    margin-left: 50px;
-    margin-top: 0;
-
-    &:before {
-      top: 75px;
-    }
-  }
-
-  .yoga-directions__link:first-child {
-    margin-top: -6px;
+    margin-top: 45px;
   }
 }
