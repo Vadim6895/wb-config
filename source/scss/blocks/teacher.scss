@@ -2,7 +2,7 @@
   margin-left: 0;
   background: url("../img/yoga-bckg-pattern-team-320.png");
   background-repeat: no-repeat;
-  background-position: 0px 0px;
+  background-position: 0px 30px;
   background-color: #FCF8FE;
 }
 
@@ -82,7 +82,12 @@
   .teacher {
     background: url("../img/yoga-bckg-pattern-team-1280.png");
     background-repeat: no-repeat;
-    background-position: 0px -40px;
+    background-position: 0px -70px;
     background-color: #FCF8FE;
+  }
+
+  .teacher__title {
+    font-size: 30px;
+    padding-top: 130px;
   }
 }

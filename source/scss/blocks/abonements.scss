@@ -1,8 +1,7 @@
 .abonements {
-  background: url("../img/yoga-cloud-bckg-768.png");
+  background: url("../img/yoga-cloud-bckg-768.png") #FCF8FE;
   background-repeat: no-repeat;
   background-position: 0px 100px;
-  background-color: #FCF8FE;
 }
 
 .abonements__title {
@@ -17,6 +16,8 @@
   display: flex;
   justify-content: space-around;
   padding: 0 20px 0 20px;
+  max-width: 400px;
+  margin: 14px auto 14px auto;
 }
 
 .abonements__period-item {
@@ -27,6 +28,11 @@
   text-decoration: none;
   color: #E65C7B;
   @include geometria-medium(12px);
+
+  &:hover {
+    color: #8E80A9;
+    border-bottom: 2px solid #8E80A9;
+  }
 }
 
 .abonements__list {
@@ -86,34 +92,33 @@
     background: url("../img/yoga-cloud-bckg-1456.png");
     background-repeat: no-repeat;
     background-color: #FCF8FE;
-    background-position: 0px -450px;
-    background-size: 1920px;
+    background-position: 0px -100px;
+    background-size: $xl 600px;
   }
 
   .abonements__title {
-    padding-top: 40px;
+    padding-top: 70px;
     font-size: 21px;
   }
 
   .abonements__period-abonement {
     max-width: 400px;
-    margin: 0 auto 50px auto;
+    margin: 20px auto 30px auto;
   }
 
   .abonements__list {
     display: flex;
-    max-width: 1200px;
+    max-width: 670px;
     margin: 0 auto;
+    align-items: flex-start;
   }
 
   .abonements__item {
     width: 176px;
-    max-height: 158px;
   }
 
   .abonements__item--promo {
     width: 221px;
-    max-height: 221px;
   }
 
   .abonements__button {
@@ -122,6 +127,59 @@
 
   .abonements__button--promo {
     display: block;
-    margin: 10px auto 50px auto;
+    margin: 10px auto 30px auto;
+    padding: 10px;
+    width: 150px;
+  }
+}
+
+@media (min-width: $xl) {
+  .abonements {
+    background-position: 0px -100px;
+    background-size: 1920px 800px;
+  }
+
+  .abonements__title {
+    font-size: 30px;
+    padding-top: 60px;
+  }
+
+  .abonements__list {
+    max-width: 950px;
+  }
+
+  .abonements__item {
+    width: 263px;
+  }
+
+  .abonements__item--promo {
+    width: 331px;
+    min-height: 331px;
+  }
+
+  .abonements__time {
+    font-size: 18px;
+    margin-top: 40px;
+  }
+
+  .abonements__description {
+    font-size: 12px;
+  }
+
+  .abonements__period-abonement {
+    margin: 50px auto 50px auto;
+  }
+
+  .abonements__price {
+    font-size: 30px;
+    margin-bottom: 60px;
+  }
+
+  .abonements__button--promo {
+    width: 223px;
+    font-size: 12px;
+    margin-top: -20px;
+    margin-bottom: 50px;
+    padding: 20px;
   }
 }

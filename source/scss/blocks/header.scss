@@ -24,8 +24,6 @@
   font-family: Caveat;
   font-weight: 100;
   font-size: 18px;
-  margin-top: 50px;
-  margin-left: 40px;
   margin: 50px auto 0 auto;
   color: #8E80A9;
 }
@@ -89,20 +87,18 @@
 
 @media (min-width: $md) {
   .header {
-    background-color: #FCF8FE;
-    background: url("../img/yoga-logo-768.svg"), url("../img/header-bckg-1280.png");
+    background: url("../img/yoga-logo-768.svg"), url("../img/header-bckg-1280.png") #FCF8FE;
     background-repeat: no-repeat;
-    background-size: auto, 1920px;
-    background-position: center 90px, 0px -670px;
-    padding-bottom: 180px;
-    background-color: #FCF8FE;
+    background-size: auto, $xl;
+    background-position: center 100px, 0px -320px;
+    padding-bottom: 150px;
   }
 
   .header__nav {
     width: 630px;
     justify-content: space-between;
     margin: 0 auto 0 auto;
-    padding-top: 50px;
+    padding-top: 20px;
   }
 
   .header__button-menu {
@@ -111,12 +107,12 @@
 
   .header__title {
     width: 320px;
-    margin: 50px auto 0 auto;
+    margin: 30px 40% 0 20%;
     font-size: 24px;
   }
 
   .header__trial-lesson {
-    margin: 130px auto 0 auto;
+    margin: 150px auto 0 auto;
   }
 }
 
@@ -126,7 +122,7 @@
     background: url("../img/yoga-logo-1280.svg"), url("../img/header-bckg-1280.png"), #FCF8FE;
     background-repeat: no-repeat;
     background-size: auto, 1920px;
-    background-position: center 230px, 0 -200px;
+    background-position: center 230px, 0 -330px;
     padding-bottom: 280px;
   }
 
@@ -145,7 +141,7 @@
   }
 
   .header__trial-lesson {
-    margin-top: 282px;
+    margin-top: 302px;
     line-height: 20px;
     width: 200px;
     font-size: 14px;
