@@ -89,8 +89,8 @@
   .header {
     background: url("../img/yoga-logo-768.svg"), url("../img/header-bckg-1280.png") #FCF8FE;
     background-repeat: no-repeat;
-    background-size: auto, 1920px;
-    background-position: center 100px, 0px -670px;
+    background-size: auto, $xl;
+    background-position: center 100px, 0px -320px;
     padding-bottom: 150px;
   }
 
@@ -122,7 +122,7 @@
     background: url("../img/yoga-logo-1280.svg"), url("../img/header-bckg-1280.png"), #FCF8FE;
     background-repeat: no-repeat;
     background-size: auto, 1920px;
-    background-position: center 230px, 0 -200px;
+    background-position: center 230px, 0 -330px;
     padding-bottom: 280px;
   }
 

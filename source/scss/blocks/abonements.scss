@@ -28,6 +28,11 @@
   text-decoration: none;
   color: #E65C7B;
   @include geometria-medium(12px);
+
+  &:hover {
+    color: #8E80A9;
+    border-bottom: 2px solid #8E80A9;
+  }
 }
 
 .abonements__list {
@@ -87,8 +92,8 @@
     background: url("../img/yoga-cloud-bckg-1456.png");
     background-repeat: no-repeat;
     background-color: #FCF8FE;
-    background-position: 0px -450px;
-    background-size: 1920px;
+    background-position: 0px -100px;
+    background-size: $xl 600px;
   }
 
   .abonements__title {
@@ -129,6 +134,11 @@
 }
 
 @media (min-width: $xl) {
+  .abonements {
+    background-position: 0px -100px;
+    background-size: 1920px 800px;
+  }
+
   .abonements__title {
     font-size: 30px;
     padding-top: 60px;
